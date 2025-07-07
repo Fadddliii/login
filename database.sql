@@ -84,6 +84,7 @@ ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_
 COPY public.users (id, username, password) FROM stdin;
 1	admin	$2y$10$UD3p/w8nHjaW27vKVbHjROBYgBXP.SsGuQMNZluJkWjuVID/M4UMG
 2	fadliilhami	$2y$10$3KdPLS2/0XzyeA9VLHQCDuTCj2Ev3Kovvm3rhUfCJCKUXuAD2zs0K
+3	mamat	$2y$10$kecOrDky8McaAhuVGBQLA.UY3yRNrspgSIQreyO/NUJi2sxm6jOFG
 \.
 
 
@@ -91,7 +92,7 @@ COPY public.users (id, username, password) FROM stdin;
 -- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.users_id_seq', 2, true);
+SELECT pg_catalog.setval('public.users_id_seq', 3, true);
 
 
 --
