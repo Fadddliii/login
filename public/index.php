@@ -3,14 +3,14 @@ require_once __DIR__ . '/../app/controllers/AuthController.php';
 
 $controller = new AuthController();
 
-$action = $_GET['action'] ?? 'login';
+$action = $_GET['action'] ?? 'register';
 
 switch ($action) {
-    case 'login':
-        $controller->login();
-        break;
     case 'register':
         $controller->register();
+        break;  
+    case 'login':
+        $controller->login();
         break;
     case 'dashboard':
         $controller->dashboard();

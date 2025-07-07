@@ -5,6 +5,6 @@ return [
         'port' => '5432',
         'dbname' => 'testdb',
         'user' => 'postgres',
-        'pass' => '102030',
+        'pass' => 'alfayyadh',
     ]
 ];
